@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a link {
+    text-decoration:none;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    padding: 20px;
+}
+
+.row{
+    background-color: rgb(190, 214, 206);
+    padding: 20px;
+}
+
+
+@media (max-width:575px){
+    .row{ 
+    background-color: antiquewhite;
+    }
+    
+}
+.columna{
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration:none;
+    text-align: center;
+    color: #475044;
+    
+}
+
+.carousel-inner{
+    padding: 20px;
+
+}
+
+.iconos{
+    width:75px;
+    height: 75px;
+}
+
+.texto{
+    font-size: 75%;
+    color: #6b7a67;
+    text-align: center
+
+}
+
+
+.footerpie{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    font-size: 75%;
+    color: #475044;
+    
+}
+.item-footerpie{
+    list-style-type: none;
+    text-align: center
+}
+
+@media (max-width:575px){
+    .footerpie{ 
+    background-color: rgb(190, 214, 206);
+    }
+}
+
+/*QUIENES SOMOS*/
+
+.contenedornosotros{
+    display: flex;
+   padding: 20px;
+   flex-direction: row;
+   flex-wrap:wrap;
+   align-content: center;
+   justify-content: center;
+}
+.nosotrostexto{
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content: center;
+    flex-shrink: 1;
+}
+
+.nosotrosimagen{
+    padding: 20px;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content: center;
+    flex-shrink: 1; 
+    display: flex;
+   
+}
+
+.imagentaller{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.titulo{
+    color: #475044;
+    font-weight: bold;
+
+}
+
+.subtitulo{
+    color: #6b7a67;
+    font-style: italic;
+}
+
+/*PRODUCTOS*/
+
+.contenedorproductos{
+    display: flex;
+   padding: 20px;
+   flex-direction: row;
+   flex-wrap:wrap;
+   align-content: center;
+   justify-content: center;
+}
+.tiposdeproductos{
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-content: center;
+    flex-shrink: 1;
+}
+
+.productosimagen{
+    padding: 20px;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content: center;
+    flex-shrink: 1; 
+    display: flex;
+   
+}
+
+.imagen-productos{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.titulo{
+    color: #475044;
+    font-weight: bold;
+   
+
+}
+
+.subtitulo{
+    color: #6b7a67;
+    font-style: italic;
+   
+}
+
+
+
+/*AYUDA*/
+
+
+.introduccion_ayuda{
+    padding: 20px;
+    margin-left: 7%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content: center;
+}
+
+.container_ayuda{
+    display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	max-width: 80%;
+	margin: auto;
+}
+
+.pregunta {
+	margin: 10px;
+	max-width: 900px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+.pregunta_encabezado h3 {
+	font-size: 1rem;
+	margin: 0;
+	cursor: pointer;
+    color: #6b7a67;
+    font-style: italic;
+}
+
+.respuesta {
+	height: 0;
+	opacity: 0;
+}
+
+.respuesta.activo {
+	height: auto;
+	opacity: 1;
+}
+
+
+/* CONTACTO*/
+
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "titulo formulario";
+}
+.titulo2{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 50%;
+    text-align: center;
+}
+.formulario{
+    grid-area: formulario;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+form {
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+  form input {
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #9c9c9c;
+  }
+  
+  .button{
+    width: 100px;
+  }
+  form button {
+    background: lightgrey;
+    width: 50px;
+    padding: 3px;
+    border: 0;
+  }
+  form button:hover {
+    background: rgb(190, 214, 206);
+  }
+  
+  label {
+    text-align: right;
+    display: block;
+    padding: 0.5em 1.5em 0.5em 0;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+  }
+  input:focus {
+    outline: 3px solid rgb(190, 214, 206);
+  }
+  
+  @media (min-width: 575px) {
+
+    .titulo2{
+        margin-right: 10%;
+        margin-left: 5%;
+    }
+
+    form {
+      overflow: hidden;
+    }
+  
+    label {
+      float: left;
+      width: 200px;
+      padding: 0.5em 0.5em 0.5em 0;
+    }
+  
+    input {
+      float: left;
+      width: calc(100% - 200px);
+    }
+  
+    button {
+      float: right;
+      width: calc(100% - 200px);
+    }
+  }
