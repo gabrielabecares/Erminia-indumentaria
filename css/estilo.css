@@ -20,7 +20,7 @@ a link {
 }
 
 
-@media (max-width:575px){
+@media (max-width:768px){
     .row{ 
     background-color: antiquewhite;
     }
@@ -59,9 +59,9 @@ a link {
     display: flex;
     justify-content: center;
     padding: 20px;
-    margin: 20px;
     font-size: 75%;
     color: #475044;
+    margin-top: 20px;
     
 }
 .item-footerpie{
@@ -69,7 +69,7 @@ a link {
     text-align: center
 }
 
-@media (max-width:575px){
+@media (max-width:768px){
     .footerpie{ 
     background-color: rgb(190, 214, 206);
     }
@@ -123,6 +123,17 @@ a link {
     font-style: italic;
 }
 
+@media (max-width:768px){
+    .subtitulo{ 
+        text-align: center;
+    }
+    .parr{
+        text-align: center;
+    }
+    .nosotrostexto{
+        text-align: center;
+    }
+}
 /*PRODUCTOS*/
 
 .contenedorproductos{
@@ -231,15 +242,16 @@ a link {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     grid-template-areas: "titulo formulario";
+    justify-content: center;
 }
 .titulo2{
     grid-area: titulo;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 10%;
-    padding-left: 50%;
+    width: 300px;
     text-align: center;
+    margin-left: 100px;
 }
 .formulario{
     grid-area: formulario;
@@ -247,6 +259,7 @@ a link {
     justify-content: center;
     align-items: center;
     flex-wrap:wrap;
+    margin: 20px;
 }
 
 form {
@@ -259,6 +272,10 @@ form {
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
   }
   form input {
     margin-bottom: 10px;
@@ -268,6 +285,7 @@ form {
   
   .button{
     width: 100px;
+    float: right;
   }
   form button {
     background: lightgrey;
@@ -279,26 +297,42 @@ form {
     background: rgb(190, 214, 206);
   }
   
-  label {
-    text-align: right;
-    display: block;
-    padding: 0.5em 1.5em 0.5em 0;
-  }
-  
-  input {
-    width: 100%;
-    padding: 0.7em;
-    margin-bottom: 0.5rem;
-  }
   input:focus {
     outline: 3px solid rgb(190, 214, 206);
   }
-  
-  @media (min-width: 575px) {
+  label {
+    float: right;
+    width: 200px;
+    padding: 0.5em 0.5em 0.5em 0;
+  }
+
+  input {
+    float: right;
+    width: calc(100% - 200px);
+  }
+
+
+
+
+  @media (max-width: 768px) {
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "titulo"
+        "formulario";
+    }
+
+
+
 
     .titulo2{
-        margin-right: 10%;
-        margin-left: 5%;
+        
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
     }
 
     form {
